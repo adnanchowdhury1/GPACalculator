@@ -45,403 +45,89 @@ function calculate(){
     
 }
 
+function addPointsHelper(number) {
+
+    if (number === 1){
+        return document.getElementById("credits1").value;
+    }
+    else if (number === 2) {
+        return document.getElementById("credits2").value;
+    }
+    else if (number === 3) {
+        return document.getElementById("credits3").value;
+    }
+    else if (number === 4) {
+        return document.getElementById("credits4").value;
+    }
+    else if (number === 5) {
+        return document.getElementById("credits5").value;
+    }
+    else if (number === 6) {
+        return document.getElementById("credits6").value;
+    }
+    else if (number === 7) {
+        return document.getElementById("credits7").value;
+    }
+    else if (number === 8) {
+        return document.getElementById("credits8").value;
+    }
+    else if (number === 9) {
+        return document.getElementById("credits9").value;
+    }
+    else if (number === 10) {
+        return document.getElementById("credits10").value;
+    }
+
+}
+
 function addPoints(id, number){
     let credits = 0;
     if (id.value === 'A'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
-        
+        credits = addPointsHelper(number);
         return 4.0 * credits;
     }
     else if (id.value === 'A-'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 3.7 * credits;
     }
     else if (id.value === 'B+'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 3.3 * credits;
     }
     else if (id.value === 'B'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 3.0 * credits;
     }
     else if (id.value === 'B-'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 2.7 * credits;
     }
     else if (id.value === 'C+'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 2.3 * credits;
     }
     else if (id.value === 'C'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 2.0 * credits;
     }
     else if (id.value === 'C-'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 1.7 * credits;
     }
     else if (id.value === 'D+'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 1.3 * credits;
     }
     else if (id.value === 'D'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 1.0 * credits;
     }
     else if (id.value === 'D-'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 0.7 * credits;
     }
     else if (id.value === 'F'){
-        if (number === 1){
-            credits = document.getElementById("credits1").value;
-        }
-        else if (number === 2) {
-            credits = document.getElementById("credits2").value;
-        }
-        else if (number === 3) {
-            credits = document.getElementById("credits3").value;
-        }
-        else if (number === 4) {
-            credits = document.getElementById("credits4").value;
-        }
-        else if (number === 5) {
-            credits = document.getElementById("credits5").value;
-        }
-        else if (number === 6) {
-            credits = document.getElementById("credits6").value;
-        }
-        else if (number === 7) {
-            credits = document.getElementById("credits7").value;
-        }
-        else if (number === 8) {
-            credits = document.getElementById("credits8").value;
-        }
-        else if (number === 9) {
-            credits = document.getElementById("credits9").value;
-        }
-        else if (number === 10) {
-            credits = document.getElementById("credits10").value;
-        }
+        credits = addPointsHelper(number);
         return 0.0 * credits;
     }
     else {
